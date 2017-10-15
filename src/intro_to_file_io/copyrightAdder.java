@@ -32,11 +32,11 @@ public static void main(String[] args) {
 				System.out.println(line);
 				line = br.readLine();
 			}
-			FileWriter fw=new FileWriter(fileName,true);
+			FileWriter fw=new FileWriter(fileName);
 			BufferedWriter bw=new BufferedWriter(fw);
-			bw.write("//Copyright © 2017 by Casey Holden");
+			bw.write("//Copyright © 2017 by Casey Holden \n");
 			for(int x=0;x<text.size();x++) {
-				bw.write(text.get(x));
+				bw.write(text.get(x)+"\n");
 			}
 			bw.close();
 			fw.close();
